@@ -1,0 +1,26 @@
+.nav {
+  width: 100vw;
+  display: flex;
+  padding: 10px 10px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  justify-content: space-between;
+
+  &-logo {
+    width: 2rem;
+    cursor: pointer;
+  }
+}
+
+.search {
+  height: 2rem;
+  padding: 2px !important;
+}
+
+.button {
+  outline: none;
+  background: none;
+  border: unset;
+  cursor: pointer;
+}
