@@ -13,7 +13,6 @@ const Home: NextPage = () => {
     const dispatch = useDispatch();
 
     const [timerId, setTimerId] = useState<NodeJS.Timer>();
-    console.log(timerId);
 
     useEffect(() => {
         if(!timerId){

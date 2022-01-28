@@ -1,6 +1,5 @@
 import styles from "../../../styles/Home.module.scss";
-import Image from "next/image";
-import Spinner from "../../../public/spinner.gif";
+import ClipLoader from "react-spinners/ClipLoader";
 import React from "react";
 import {ChainsMap} from "../../../@types/chain";
 import ChainCard from "./ChainCard";
@@ -16,7 +15,7 @@ const Chains: React.FC<ChainsProps> = ({ chains, isLoadingChains}) => {
             return <ChainCard chain={chain} key={id} color={color} status={status} id={id} />
         })}
         {isLoadingChains && <div>
-            <Image src={Spinner} alt="spinner" width={50} height={50}/>
+            <ClipLoader color="blue" loading={isLoadingChains} size={100} />
         </div>}
     </div>)
 }
