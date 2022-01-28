@@ -39,3 +39,7 @@ yarn-error.log*
 # IDES
 .vscode
 .idea
+
+# Storybook
+storybook-static
+public/static/stories

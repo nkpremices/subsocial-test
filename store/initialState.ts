@@ -1,4 +1,4 @@
-const initialState: StoreI = {
+const initialState = {
     chainsState: {
         currentChains: null,
         errorMessage: null,

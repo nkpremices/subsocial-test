@@ -1,6 +1,6 @@
 import styles from "../../../styles/Home.module.scss";
 import Image from "next/image";
-import Spinner from "../../../assets/img/spinner.gif";
+import Spinner from "../../../public/spinner.gif";
 import React from "react";
 import {ChainsMap} from "../../../@types/chain";
 import ChainCard from "./ChainCard";

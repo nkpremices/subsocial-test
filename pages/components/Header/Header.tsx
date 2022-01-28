@@ -1,7 +1,7 @@
 import styles from './header.module.scss';
 import Image from "next/image";
-import SubIdLogo from '../../../assets/img/id-logo.png'
-import MenuLogo from '../../../assets/img/menu-bars.png'
+import SubIdLogo from '../../../public/id-logo.png'
+import MenuLogo from '../../../public/menu-bars.png'
 
 const Header = () => {
     return (<div className={styles.nav}>

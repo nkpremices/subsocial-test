@@ -94,20 +94,6 @@
   border-color: #0070f3;
 }
 
-// #card-online:hover,
-//#card-online:focus,
-//#card-online:active {
-//  color: #00e01a;
-//  border-color: #00e01a;
-//}
-//
-//#card-offline:hover,
-//#card-offline:focus,
-//#card-offline:active {
-//  color: #ff0000;
-//  border-color: #ff0000;
-//}
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.25rem;
@@ -134,6 +120,15 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    margin-left: 0;
+    padding: 1rem;
+    border-radius: 7px;
+    width: 16rem;
   }
 }
 
