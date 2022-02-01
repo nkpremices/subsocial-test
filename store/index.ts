@@ -1,9 +1,10 @@
-import { applyMiddleware, createStore } from 'redux';
-import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
-import appReducer from './reducers';
-import initialState from './initialState';
+import { configureStore } from '@reduxjs/toolkit';
+import chainsReducer from './features/chains';
 
-const store = createStore(appReducer, (initialState) as any, composeWithDevTools(applyMiddleware(thunk)));
+export const store = configureStore({
+    reducer: {
+        chainsState: chainsReducer,
+    },
+});
 
 export default store;

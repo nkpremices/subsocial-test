@@ -2,12 +2,12 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import {useEffect, useState} from "react";
-import {getChains} from "../store/actions/creators/chains.actions";
 import {useDispatch, useSelector} from "react-redux";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import Chains from './components/Chains';
+import {getChainsThunk} from "../services/chains.api";
 
 const Home: NextPage = () => {
     const dispatch = useDispatch();
@@ -16,9 +16,9 @@ const Home: NextPage = () => {
 
     useEffect(() => {
         if(!timerId){
-            getChains()(dispatch);
+            dispatch(getChainsThunk());
             setTimerId(setInterval(() => {
-                getChains()(dispatch);
+                dispatch(getChainsThunk());
             }, 300000));
         }
 

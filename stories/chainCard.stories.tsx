@@ -27,7 +27,4 @@ ChainCardProps.args = {
         name: 'Kusama',
         isConnected: true
     },
-    id: Math.random().toString(),
-    color: '#00ff00',
-    status: 'Connected',
 }

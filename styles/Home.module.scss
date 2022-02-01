@@ -71,7 +71,6 @@
   justify-content: center;
   flex-wrap: wrap;
   min-height: 90vh;
-  //max-width: 800px;
 }
 
 .card {
@@ -83,37 +82,39 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  //max-width: 300px;
   width: 18.5rem;
+  height: 5rem;
+  position: relative;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  //color: #0070f3;
   border-color: #0070f3;
 }
 
 .card h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0 0 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   display: flex;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: inherit;
 }
 
 .card p {
   margin: 0;
   font-size: 1.15rem;
   width: 14rem !important;
-  //line-height: 1.5;
 }
 
 .logo {
   border-radius: 5px;
-}
-
-.connection-sign {
-  //flex-grow: 1;
 }
 
 @media (max-width: 600px) {
@@ -130,11 +131,4 @@
     border-radius: 7px;
     width: 16rem;
   }
-}
-
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
 }

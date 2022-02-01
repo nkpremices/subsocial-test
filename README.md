@@ -26,65 +26,59 @@ red - disconnected <br>
 
 ## Project structure
    ```
-  |-- @types
-  |   |-- chain.ts
-  |   |-- index.d.ts
-  |   `-- redux
-  |       `-- actionCreators.ts
-  |-- README.md
-  |-- assets
-  |   |-- img
-  |   `-- svg
-  |-- next-env.d.ts
-  |-- next-preset.js
-  |-- next.config.js
-  |-- package.json
-  |-- pages
-  |   |-- _app.tsx
-  |   |-- api
-  |   |   `-- hello.ts
-  |   |-- components
-  |   |   |-- Chains
-  |   |   |   |-- ChainCard.tsx
-  |   |   |   `-- index.tsx
-  |   |   |-- Footer
-  |   |   |   `-- index.tsx
-  |   |   `-- Header
-  |   |       |-- Header.tsx
-  |   |       `-- header.module.scss
-  |   `-- index.tsx
-  |-- public
-  |   |-- favicon.ico
-  |   |-- id-logo.png
-  |   |-- menu-bars.png
-  |   |-- offline-sign.svg
-  |   |-- online-sign.svg
-  |   |-- spinner.gif
-  |   |-- static
-  |   |   |-- stories
-  |   |   `-- template.md
-  |   |-- sub-id-logo.png
-  |   `-- vercel.svg
-  |-- services
-  |   `-- axios.service.ts
-  |-- store
-  |   |-- actions
-  |   |   |-- creators
-  |   |   |   `-- chains.actions.ts
-  |   |   `-- types
-  |   |       `-- chains.types.ts
-  |   |-- index.ts
-  |   |-- initialState.ts
-  |   `-- reducers
-  |       |-- chains.reducer.ts
-  |       `-- index.ts
-  |-- stories
-  |   |-- chainCard.stories.tsx
-  |   `-- chains.stories.tsx
-  |-- styles
-  |   |-- Home.module.scss
-  |   `-- globals.scss
-  `-- tsconfig.json
+.
+|-- @types
+|   |-- chain.ts
+|   `-- index.d.ts
+|-- README.md
+|-- assets
+|   |-- img
+|   `-- svg
+|-- next-env.d.ts
+|-- next-preset.js
+|-- next.config.js
+|-- package.json
+|-- pages
+|   |-- _app.tsx
+|   |-- api
+|   |   `-- hello.ts
+|   |-- components
+|   |   |-- Chains
+|   |   |   |-- ChainCard.tsx
+|   |   |   `-- index.tsx
+|   |   |-- Footer
+|   |   |   `-- index.tsx
+|   |   `-- Header
+|   |       |-- Header.tsx
+|   |       `-- header.module.scss
+|   `-- index.tsx
+|-- public
+|   |-- favicon.ico
+|   |-- id-logo.png
+|   |-- menu-bars.png
+|   |-- offline-sign.svg
+|   |-- online-sign.svg
+|   |-- spinner.gif
+|   |-- static
+|   |   |-- stories
+|   |   `-- template.md
+|   |-- sub-id-logo.png
+|   `-- vercel.svg
+|-- services
+|   |-- axios.service.ts
+|   `-- chains.api.ts
+|-- store
+|   |-- features
+|   |   `-- chains.ts
+|   |-- index.ts
+|   `-- initialState.ts
+|-- stories
+|   |-- chainCard.stories.tsx
+|   `-- chains.stories.tsx
+|-- styles
+|   |-- Home.module.scss
+|   `-- globals.scss
+`-- tsconfig.json
 
 ```
 
